@@ -6,5 +6,10 @@ pipeline {
                 sh 'python --version'
             }
         }
+        stage('echo') {
+            steps {
+                sh 'echo "hello world"'
+            }
+        }
     }
 }

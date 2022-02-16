@@ -6,6 +6,11 @@ pipeline {
                 sh 'python --version'
             }
         }
+        stage('Sanity check') {
+            steps {
+                input "Does the staging environment look ok?"
+            }
+        }
         stage('echo') {
             steps {
                 sh 'echo "hello world"'

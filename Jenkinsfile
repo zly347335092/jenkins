@@ -17,9 +17,7 @@ pipeline {
             echo 'This will always run'
         }
         success {
-            mail to: 'zhanglinyu@eccom.com.cn',
-             subject: "success Pipeline",
-             body: "perfect"
+            echo 'This will run only if success'
         }
         failure {
             echo 'This will run only if failed'

@@ -23,6 +23,7 @@ pipeline {
         }
         success {
             echo 'This will run only if success'
+            deleteDir()
         }
         failure {
             echo 'This will run only if failed'

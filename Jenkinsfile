@@ -22,7 +22,7 @@ pipeline {
             echo 'This will always run'
         }
         success {
-            echo 'This will run only if success'
+            echo 'This will run only if successfull!'
             deleteDir()
         }
         failure {

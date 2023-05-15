@@ -26,7 +26,7 @@ module "ecs_cluster" {
   password = "Asd123456"
 
   system_disk_category = "cloud_ssd"
-  system_disk_size     = 50
+  system_disk_size     = 60
 
   tags = {
     Created      = "Terraform"

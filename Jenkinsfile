@@ -11,8 +11,8 @@ pipeline {
         TF_HOME = tool('terraform-1.1.7')
         TF_IN_AUTOMATION = "true"
         PATH = "$TF_HOME:$PATH"
-        ACCESS_KEY = credentials('ALICLOUD_ACCESS_KEY')
-        SECRET_KEY = credentials('ALICLOUD_SECRET_KEY')
+        ACCESS_KEY = credentials('AWS_ACCESS_KEY_ID')
+        SECRET_KEY = credentials('AWS_SECRET_ACCESS_KEY')
     }
     stages {
             stage('TerraformInit'){
